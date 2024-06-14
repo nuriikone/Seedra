@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* /* /* [align]{
+    color: aqua;
+} */
+
+/* [href]{
+    color: red;
+}
+
+[type]{
+    border-radius: 30% 50% 15% 20%;
+    border: 1px solid gray;
+    padding-left: 1rem;
+}
+
+[align ~= 'center']{
+    color: chocolate;
+}
+
+[align ~= 'left']{
+    color: pink;
+}
+
+[class]{
+    color: purple;
+}
+
+[class |= 'top']{
+    color: yellow;
+}
+
+[class ^= 'top']{
+    color: burlywood;
+}
+
+[class $= "end"]{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+[class *= "en"]{
+    background-color: blueviolet;
+}  */ */
+
+.box{
+    counter-reset: name;
+}
+
+.box h1::before{
+    counter-increment: name;
+    cont    ent: counter(name) ". ";
+}
